@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.analyzer.detekt)
+    alias(libs.plugins.analyzer.kover)
 }
 
 android {
@@ -30,6 +32,8 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+
 }
 
 dependencies {
